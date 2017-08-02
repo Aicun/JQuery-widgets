@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>UI Widgets</title>
+    <!-- jQuery UI style sheet -->
+    <link rel="stylesheet" href="widgets.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="widgets.js"></script>
+</head>
+
+<body>
+    <main>
+        <h1>jQuery FAQs</h1>       
+        <div id="accordion">
+ 			<h3>What is jQuery?</h3>
+			<div>
+				<p>jQuery is a library of the JavaScript functions that you're most likely 
+			   	to need as you develop web sites.
+				</p>
+			</div>
+			<h3>Why is jQuery becoming so popular?</h3>
+			<div>
+				<p>Three reasons:</p>
+				<ul>
+					<li>It's free.</li>
+					<li>It lets you get more done in less time.</li>
+					<li>All of its functions are cross-browser compatible.</li>
+				</ul>
+			</div>
+			<h3>Which is harder to learn: jQuery or JavaScript?</h3>
+			<div>
+				<p>For most functions, jQuery is significantly easier to learn 
+			    and use than JavaScript. But remember that jQuery is JavaScript.
+				</p>
+			</div>
+        </div>
+        <br>
+
+        <div id="tabs">
+            <ul>
+                <li><a href="#tab1">Book description</a></li>
+                <li><a href="#tab2">About the author</a></li>
+                <li><a href="#tab3">Who this book is for</a></li>
+            </ul>
+            <div id="tab1">Book description is empty</div>
+            <div id="tab2">About the author is empty</div>
+            <div id="tab3">Who this book is for is empty</div>
+        </div>
+        <br>
+
+        <div>
+            <h1>Featured Book</h1>
+            <a id="book"><img src="images/html5.jpg" alt="HTML5 and CSS3 book" width="150" height="188" /></a>
+            <div id="dialog" title="HTML5 and CSS3" style="display: none;">
+                <p>Teach yourself how to design web pages the way the professionals do, by using HTML and CSS 
+                    in tandem to structure and format the page content. Packed with expert practices, our HTML5 
+                    and CSS3 book guides you through each step as you learn how to develop professional sites 
+                    while maintaining browser compatibility.</p>
+            </div>
+        </div>
+        <br>
+
+        <div class="ui-widget">
+            <label for="books">Book: </label>
+            <input id="books">
+        </div>
+        <br>
+
+        <div>
+            <label for="arrivalDate">Arrival Date:</label>
+            <label><input type="text" id="arrivalDate"></label>
+        </div>
+        <br>
+
+        <div>
+            <div id="size">
+                <label>Company size: </label>
+                <input type="text" id="employees" style="border:0;">
+            </div>
+            <div id="slider" style="width:100px;"></div>
+        </div>
+        <br>
+
+        <div>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a>
+                    <ul>
+                        <li><a href="history.html">Company History</a></li>
+                        <li><a href="staff.html">Our Staff</a></li>
+                        <li><a href="headquarters.html">Our Headquarters</a></li>
+                    </ul>
+                </li>
+                <li><a href="solutions.html">Solutions</a>
+                    <ul>
+                        <li><a href="vProspect.html">vProspect 2.0</a></li>
+                        <li><a href="vConvert.html">vConvert 2.0</a></li>
+                        <li><a href="vRetain.html">vRetain 1.0</a></li>
+                    </ul>
+                </li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+    </main>
+</body>
+</html>
